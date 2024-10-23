@@ -18,6 +18,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     background-color: #748d92;
+    background: linear-gradient(to bottom right, #212a31 5%, #2e3944 10%, #124e66 20%, #748d92, #d3d9d4)
 }
 
 h1 {
@@ -178,6 +179,12 @@ button:focus,
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    @starting-style {
+        opacity: 0;
+    }
 }
 
 .profile__intro {
@@ -347,9 +354,7 @@ table {
 	grid-gap: 20px;
     max-width: 400px;
     margin: 0 auto;
-   /* margin: 0 600px 0; */
     text-align: center;
-    /* justify-content: center; */
 }
 
 .grid-message_item {
