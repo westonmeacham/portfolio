@@ -180,10 +180,17 @@ button:focus,
     margin-right: 40px;
     border-radius: 50%;
     transition-property: opacity;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
     transition-timing-function: ease-in-out;
-    @starting-style {
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
         opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
