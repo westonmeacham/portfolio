@@ -1,4 +1,3 @@
-<script>
 function handleSubmit(event) {
     event.preventDefault()} // Prevent the default form submission
 
@@ -10,9 +9,9 @@ function handleSubmit(event) {
     // Simple validation
     if (email && telephone && message) {
         // Simulate a successful submission
-        feedbackDiv.textContent = 'Your message has been sent successfully!'}
+        feedbackDiv.textContent = 'Your message has been sent successfully!';
         feedbackDiv.style.color = 'green';
-     else {
+    } else {
         // Simulate an error response
         feedbackDiv.textContent = 'Please fill out all fields.'}
         feedbackDiv.style.color = 'red';
@@ -20,6 +19,4 @@ function handleSubmit(event) {
 
     // Clear the form (optional)
     document.getElementById('contact-form').reset();
-
-</script>
 
