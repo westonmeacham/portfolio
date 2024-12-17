@@ -39,6 +39,10 @@ h3 {
 
 /* Links etc */
 
+#special-link {
+    color: white;
+}
+
 a {
     color: #124e66;
 }
@@ -102,6 +106,11 @@ button:focus,
 }
 
 .button_secondary {
+    background-color: #124e66;
+    color: white;
+}
+
+.button_resume {
     background-color: #124e66;
     color: white;
 }
